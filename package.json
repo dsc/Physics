@@ -1,29 +1,36 @@
 {
-    "name"                          : "physics",
-    "version"                       : "1.0.1",
-    "description"                   : "Port of the Traer Physics Library from Processing",
-    "homepage"                      : "http://jonobr1.github.io/Physics/",
-    "author"                        : "Jono Brandel (http://jonobr1.com)",
-    "contributors"                  : [ "David Schoonover <dsc@less.ly> (http://less.ly)" ],
-    "keywords"                      : [ "physics", "particle", "system", "animation" ],
-    
-    "main"                          : "./build/particle.js",
-    "browser"                       : "./src",
-    
-    "devDependencies"               : {
-        "browserify"                : "4.x",
-        "uglify-js"                 : "2.x",
-        "sass"                      : "*",
-        "bower"                     : "*",
-        "component"                 : "*"
+    "name": "physics",
+    "version": "1.0.1",
+    "description": "Port of the Traer Physics Library from Processing",
+    "homepage": "http://jonobr1.github.io/Physics/",
+    "author": "Jono Brandel (http://jonobr1.com)",
+    "contributors": [
+        "David Schoonover <dsc@less.ly> (http://less.ly)"
+    ],
+    "keywords": [
+        "physics",
+        "particle",
+        "system",
+        "animation"
+    ],
+    "main": "./build/particle.js",
+    "browser": "./src",
+    "devDependencies": {
+        "browserify": "4.x",
+        "uglify-js": "2.x",
+        "sass": "*",
+        "bower": "*",
+        "component": "*"
     },
-    
-    
-    "scripts"                       : {
-        "prepublish"                : "browserify ./src -r ./src:physics | cat license.txt - > ./build/physics.js && (cd build; uglifyjs physics.js --source-map physics.min.map | cat ../license.txt - > physics.min.js )"
+    "scripts": {
+        "prepublish": "browserify ./src -r ./src:physics | cat license.txt - > ./build/physics.js && (cd build; uglifyjs physics.js --source-map physics.min.map | cat ../license.txt - > physics.min.js )"
     },
-    
-    "repository"                    : { "type":"git", "url":"https://github.com/dsc/physics.git" },
-    "bugs"                          : { "url":"https://github.com/jonobr1/dsc/issues" },
-    "license"                       : "MIT"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gallyamow/Physics"
+    },
+    "bugs": {
+        "url": "https://github.com/jonobr1/dsc/issues"
+    },
+    "license": "MIT"
 }

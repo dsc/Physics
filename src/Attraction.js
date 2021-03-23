@@ -1,5 +1,5 @@
 var _      = require('./common')
-,   Vector = require('./vector')
+,   Vector = require('./Vector')
 ;
 
   function Attraction(a, b, k, d) {
