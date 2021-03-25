@@ -1,5 +1,5 @@
 var _      = require('./common')
-,   Vector = require('./vector')
+,   Vector = require('./Vector')
 ;
 
   function Spring(a, b, k, d, l) {
